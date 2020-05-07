@@ -28,7 +28,7 @@
                 <div class="input-group no-border input-lg">
                   <div class="input-group-prepend">
                     <span class="input-group-text">
-                      <i class="now-ui-icons text_caps-small"></i>
+                      <i class="now-ui-icons objects_key-25"></i>
                     </span>
                   </div>
                   <input type="password" id="password" name="password" placeholder="Password" class="form-control" />
@@ -37,7 +37,7 @@
               <div class="input-group no-border input-lg">
                   <div class="input-group-prepend">
                     <span class="input-group-text">
-                      <i class="now-ui-icons text_caps-small"></i>
+                      <i class="now-ui-icons objects_key-25"></i>
                     </span>
                   </div>
                   <input type="password" id="confirmation" name="confirmation" placeholder="Password Confirmation" class="form-control" />

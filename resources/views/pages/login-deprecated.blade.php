@@ -34,15 +34,15 @@
                       <i class="now-ui-icons users_circle-08"></i>
                     </span>
                   </div>
-                  <input type="email" id="email" name="email" class="form-control" placeholder="First Name...">
+                  <input type="email" id="email" name="email" class="form-control" placeholder="Email...">
                 </div>
                 <div class="input-group no-border input-lg">
                   <div class="input-group-prepend">
                     <span class="input-group-text">
-                      <i class="now-ui-icons text_caps-small"></i>
+                      <i class="now-ui-icons objects_key-25"></i>
                     </span>
                   </div>
-                  <input type="password" name="password" id="password" placeholder="Last Name..." class="form-control" />
+                  <input type="password" name="password" id="password" placeholder="Password..." class="form-control" />
                 </div>
               </div>
               <div class="card-footer text-center">

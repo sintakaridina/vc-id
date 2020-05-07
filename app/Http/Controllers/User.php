@@ -14,9 +14,19 @@ class User extends Controller
         if(!Session::get('login')){
             return redirect('login-deprecated')->with('alert','Kamu harus login dulu');
         }
-        
+        else{
+            return view('pages.dashboard');
+        }
     }
-    
+    public function write(){
+        if(!Session::get('login')){
+            return redirect('login-deprecated')->with('alert','Kamu harus login dulu');
+        }
+        else{
+            return view('pages.write');
+        }
+    }
+  
     public function login(){
         return view('login');
     }

@@ -21,7 +21,7 @@ Route::get('/test', 'PagesController@test');
 Route::get('/dashboard', 'User@index');
 Route::get('/dashboard', 'Post@index');
 Route::get('/write', 'Post@write');
-Route::get('/write', 'User@index');
+Route::get('/write', 'User@write');
 Route::get('/login', 'User@login');
 Route::post('/loginPost', 'User@loginPost');
 Route::get('/register', 'User@register');

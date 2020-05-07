@@ -11,10 +11,10 @@
       </div>
       <div class="container">
         <div class="photo-container">
-          <img src="/img/ava-1.jpg" alt="">
+          <img src="/img/default-avatar.png" alt="">
         </div>
         <h3 class="title">{{Session::get('name')}}</h3>
-        <p class="category">( {{Session::get('id')}} )</p>
+        <p class="category">( {{Session::get('email')}} )</p>
        
       </div>
     </div>

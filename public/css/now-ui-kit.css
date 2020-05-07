@@ -1680,7 +1680,7 @@ fieldset[disabled] .navbar .navbar-nav>a.btn.active {
 }
 
 .btn-primary {
-  background-color: #f96332;
+  background-color:  rgb(78, 0, 33);
   color: #FFFFFF;
 }
 
@@ -1695,7 +1695,7 @@ fieldset[disabled] .navbar .navbar-nav>a.btn.active {
 .show>.btn-primary.dropdown-toggle,
 .show>.btn-primary.dropdown-toggle:focus,
 .show>.btn-primary.dropdown-toggle:hover {
-  background-color: #fa7a50;
+  background-color:  rgb(146, 3, 62);
   color: #FFFFFF;
   box-shadow: none;
 }
@@ -1728,13 +1728,13 @@ fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary.focus,
 fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #f96332;
-  border-color: #f96332;
+  background-color:rgb(32, 1, 14);
+  border-color:  rgb(78, 0, 33);
 }
 
 .btn-primary.btn-simple {
-  color: #f96332;
-  border-color: #f96332;
+  color:  rgb(32, 1, 14);
+  border-color:  rgb(78, 0, 33);
 }
 
 .btn-primary.btn-simple:hover,
@@ -1749,13 +1749,13 @@ fieldset[disabled] .btn-primary.active {
 .show>.btn-primary.btn-simple.dropdown-toggle:focus,
 .show>.btn-primary.btn-simple.dropdown-toggle:hover {
   background-color: transparent;
-  color: #fa7a50;
-  border-color: #fa7a50;
+  color: rgb(32, 1, 14);
+  border-color: rgb(78, 0, 33);
   box-shadow: none;
 }
 
 .btn-primary.btn-link {
-  color: #f96332;
+  color: rgb(32, 1, 14);
 }
 
 .btn-primary.btn-link:hover,
@@ -1770,7 +1770,7 @@ fieldset[disabled] .btn-primary.active {
 .show>.btn-primary.btn-link.dropdown-toggle:focus,
 .show>.btn-primary.btn-link.dropdown-toggle:hover {
   background-color: transparent;
-  color: #fa7a50;
+  color: rgb(32, 1, 14);
   text-decoration: none;
   box-shadow: none;
 }
@@ -4693,7 +4693,7 @@ Created using IcoMoon - icomoon.io
 }
 
 .bg-danger {
-  background-color: #FF3636 !important;
+  background-color: rgb(78, 0, 33) !important;
 }
 
 .bg-warning {
