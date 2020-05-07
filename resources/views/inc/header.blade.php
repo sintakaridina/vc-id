@@ -15,8 +15,17 @@
       </div>
       <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="./assets/img/blurred-image-1.jpg">
         <ul class="navbar-nav">
-        @if(Auth::check())
-        <li class="nav-item active">
+        @if(session()->has('name')) 
+        <li class="nav-item">
+            <!--<a class="nav-link btn btn-neutral" href="/signup-deprecated">
+              
+              <p>Sign Up</p>
+            </a>-->
+            <a class="nav-link btn btn-neutral" href="/logout">{{ __('Log Out') }}</a>
+           
+          </li>
+          @else
+          <li class="nav-item active">
                      <!-- <a class="nav-link" href="/login-deprecated">
                        <p>Login</p>
                 
@@ -37,16 +46,7 @@
             <p>Sign Up</p>
             </a>
           </li>
-          @else
-          
-          <li class="nav-item">
-            <!--<a class="nav-link btn btn-neutral" href="/signup-deprecated">
-              
-              <p>Sign Up</p>
-            </a>-->
-            <a class="nav-link btn btn-neutral" href="/logout">{{ __('Log Out') }}</a>
-           
-          </li>
+         
           @endif
         </ul>
       </div>

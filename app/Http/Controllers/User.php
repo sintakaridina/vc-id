@@ -12,13 +12,11 @@ class User extends Controller
     //
     public function index(){
         if(!Session::get('login')){
-            return redirect('login')->with('alert','Kamu harus login dulu');
+            return redirect('login-deprecated')->with('alert','Kamu harus login dulu');
         }
-        else{
-            return view('user');
-        }
+        
     }
-
+    
     public function login(){
         return view('login');
     }
@@ -31,6 +29,7 @@ class User extends Controller
         $data = ModelUser::where('email',$email)->first();
         if($data){ //apakah email tersebut ada atau tidak
             if(Hash::check($password,$data->password)){
+                Session::put('id',$data->id);
                 Session::put('name',$data->name);
                 Session::put('email',$data->email);
                 Session::put('login',TRUE);

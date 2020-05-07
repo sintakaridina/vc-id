@@ -14,35 +14,30 @@
           <img src="/img/ava-1.jpg" alt="">
         </div>
         <h3 class="title">{{Session::get('name')}}</h3>
-        <p class="category">( {{Session::get('email')}} )</p>
+        <p class="category">( {{Session::get('id')}} )</p>
        
       </div>
     </div>
     <div class="section">
       <div class="container">
         <div class="button-container">
-          <a href="#button" class="btn btn-primary btn-round btn-lg">Tulis Postingan</a>
+          <a href="/write" class="btn btn-primary btn-round btn-lg">Tulis Postingan</a>
         </div>
         <h3 class="title">Kelola Postingan</h3>
           <div class="row" id="modals">
             
           <div class="col">
-              <h4>Judul Postingan tentang legenda banyuwangi</h4>
-              <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+          @foreach($data as $key => $d)
+              <h4>{{ $d->judul }}</h4>
+              <a href="{{url('edit',array($d->id_post))}}" class="btn btn-primary" >
                 Edit Post
-              </button>
-              <button class="btn btn-warning" data-toggle="modal" data-target="#myModal1">
+              </a>
+              <a href="{{url('delete',array($d->id_post))}}" class="btn btn-warning" data-toggle="modal" data-target="#myModal1">
                 Delete Post
-              </button>
+              </a>
               <hr>
-              <h4>Judul Postingan tentang legenda banyuwangi</h4>
-              <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                Edit Post
-              </button>
-              <button class="btn btn-warning" data-toggle="modal" data-target="#myModal1">
-                Delete Post
-              </button>
-              <hr>
+            @endforeach
+             
 
             </div>
                  

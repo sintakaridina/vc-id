@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class ModelUser extends Model
 {
     //
+
     protected $table = 'users';
+    protected $primaryKey = 'id';
 }

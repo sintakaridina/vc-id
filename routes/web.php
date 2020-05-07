@@ -14,17 +14,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'PagesController@index');
+Route::get('/', 'Post@view');
 Route::get('/login-deprecated', 'PagesController@loginDeprecated');
 Route::get('/signup-deprecated', 'PagesController@SignUpDeprecated');
 Route::get('/test', 'PagesController@test');
-Route::get('/dashboard', 'PagesController@dashboard');
-Route::get('/write', 'PagesController@write');
+Route::get('/dashboard', 'User@index');
+Route::get('/dashboard', 'Post@index');
+Route::get('/write', 'Post@write');
+Route::get('/write', 'User@index');
 Route::get('/login', 'User@login');
 Route::post('/loginPost', 'User@loginPost');
 Route::get('/register', 'User@register');
 Route::post('/registerPost', 'User@registerPost');
 Route::get('/logout', 'User@logout');
+Route::get('edit/{id}','Post@edit');
+Route::post('update/{id}', 'Post@update');
+Route::get('delete/{id}','Post@delete');
+Route::get('read/{id}','User@index');
+Route::get('read/{id}','Post@read');
 Auth::routes();
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('/store','Post');

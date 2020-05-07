@@ -45,5 +45,6 @@ class PagesController extends Controller
         $title = 'Write';
         return view('pages.write')->with('title', $title);
     }
+   
 
 }

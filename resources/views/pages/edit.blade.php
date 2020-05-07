@@ -10,8 +10,7 @@
       <div class="page-header-image" data-parallax="true" style="background-image:url('/img/bg5.jpg');">
       </div>
       <div class="container">
-        <h3 class="title">Tulis Postingan</h3>
-        {{Session::get('id')}}
+        <h3 class="title">Edit Postingan</h3>
       </div>
     </div>
     <div class="section">
@@ -19,22 +18,24 @@
           <div class="row" id="modals">
             
           <div class="col">
-          <form class="form" method="POST" action="{{ url('/store') }}">
+          <form class="form" method="POST" action="{{url('update', $data->id_post)}}">
           {{ csrf_field() }}
-              <h4>Judul {{Session::get('id')}}</h4>
+              <h4>Judul</h4>
               <div class="form-group">
-                  <input type="text" id="judul" name="judul" placeholder="Judul Postingan" class="form-control" />
-                  <input type="hidden" id="id" name="id" value="{{Session::get('id')}}" />
+                  <input type="text" id="judul" name="judul" value="{{$data->judul}}" class="form-control" />
+                  
                 <h4>Isi Postingan </h4>
               
-                <textarea class="form-control" id="isi" name="isi" rows="4" cols="80" placeholder="Tulis isi postingan disini..."></textarea>
+                <textarea class="form-control" id="isi" name="isi" rows="4" cols="80">{{$data->isi}}</textarea>
                 <h4>Thumbnail </h4>
-                <input type="text" id="thumbnail" name="thumbnail" value="{{$data->thumbnail}}" class="form-control" />  
-              </div>
+                <input type="text" id="thumbnail" name="thumbnail" value="{{$data->thumbnail}}" class="form-control" />
+                  
+                </div>
+          
              
                 <!--<input type="file" id="thumbnail" name="thumbnail" class="form-control" accept="image/*">
   -->
-                <button type="submit" class="btn btn-primary btn-round btn-lg btn-block">Posting</button>
+                <button type="submit" class="btn btn-primary btn-round btn-lg btn-block">Update Postingan</button>
                 </div>
           </form>
                  
