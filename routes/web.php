@@ -34,3 +34,7 @@ Route::get('read/{id}','User@index');
 Route::get('read/{id}','Post@read');
 Auth::routes();
 Route::resource('/store','Post');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
