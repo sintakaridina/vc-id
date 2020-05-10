@@ -32,5 +32,5 @@ Route::post('update/{id}', 'Post@update');
 Route::get('delete/{id}','Post@delete');
 Route::get('read/{id}','User@index');
 Route::get('read/{id}','Post@read');
-Auth::routes();
+
 Route::resource('/store','Post');
