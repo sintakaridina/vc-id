@@ -54,7 +54,7 @@
                   <div class="tab-content text-center">
                     <div class="tab-pane active" id="home" role="tabpanel">
                     <h4>{{ $d->judul }}</h4>
-                      <p>{{ $d->isi }}</p>
+                      <p>{{ Str::limit($d->isi, 500) }} ... </p>
                       <a href="{{url('read',array($d->id_post))}}" class="btn btn-outline-default btn-primary btn-round">Read More</a>
                     </div>
                   </div>
