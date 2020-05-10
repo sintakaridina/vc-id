@@ -3,13 +3,18 @@
 namespace App\Http\Controllers;
 use App\ModelPost;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class Post extends Controller
 {
-    public function index()
-    {
-        $data=ModelPost::all();
+    public function user()
+    {   if(!Session::get('login')){
+        return redirect('login')->with('alert','Kamu harus login dulu');
+    }else{
+        $id_user = Session::get('id');
+        $data = ModelPost::where('id_user',$id_user)->get();
         return view('pages.dashboard',compact('data'));
+    }
     }
     public function view()
     {

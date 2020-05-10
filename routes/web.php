@@ -19,7 +19,7 @@ Route::get('/login', 'PagesController@loginDeprecated');
 Route::get('/register', 'PagesController@SignUpDeprecated');
 Route::get('/test', 'PagesController@test');
 Route::get('/dashboard', 'User@index');
-Route::get('/dashboard', 'Post@index');
+Route::get('/dashboard', 'Post@user');
 Route::get('/write', 'Post@write');
 Route::get('/write', 'User@write');
 Route::get('/login', 'User@login');

@@ -8,4 +8,5 @@ class ModelPost extends Model
 {
     protected $table = 'posts';
     protected $primaryKey = 'id_post';
+
 }
