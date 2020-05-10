@@ -71,14 +71,21 @@ class Post extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit($id){
+        if(!Session::get('login')){
+            return redirect('login')->with('alert','Kamu harus login dulu');
+        }else{
         $data=ModelPost::find($id);
         return view('pages.edit',compact('data'));
        }
+    }
        public function delete($id){
+        if(!Session::get('login')){
+            return redirect('login')->with('alert','Kamu harus login dulu');
+        }else{
         $data=ModelPost::find($id);
            $data->delete();
            return redirect ('/dashboard')->with('alert-success','Data berhasil Dihapus');
-       }
+       }}
     /**
      * Update the specified resource in storage.
      *
