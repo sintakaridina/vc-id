@@ -42,7 +42,7 @@
                 
                       </a>-->
                      
-                      <a class="nav-link" href="/login-deprecated">
+                      <a class="nav-link" href="/login">
                       <p>Login</p>
                       </a>
                    
@@ -53,7 +53,7 @@
               
               <p>Sign Up</p>
             </a>-->
-            <a class="nav-link btn btn-neutral" href="/signup-deprecated">
+            <a class="nav-link btn btn-neutral" href="/signup">
             <p>Sign Up</p>
             </a>
           </li>

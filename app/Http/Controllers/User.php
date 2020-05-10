@@ -12,7 +12,7 @@ class User extends Controller
     //
     public function index(){
         if(!Session::get('login')){
-            return redirect('login-deprecated')->with('alert','Kamu harus login dulu');
+            return redirect('login')->with('alert','Kamu harus login dulu');
         }
         else{
             return view('pages.dashboard');
@@ -20,7 +20,7 @@ class User extends Controller
     }
     public function write(){
         if(!Session::get('login')){
-            return redirect('login-deprecated')->with('alert','Kamu harus login dulu');
+            return redirect('login')->with('alert','Kamu harus login dulu');
         }
         else{
             return view('pages.write');
@@ -28,7 +28,7 @@ class User extends Controller
     }
   
     public function login(){
-        return view('login');
+        return view('pages.login-deprecated');
     }
 
     public function loginPost(Request $request){
@@ -46,11 +46,11 @@ class User extends Controller
                 return redirect('dashboard');
             }
             else{
-                return redirect('login-deprecated')->with('alert','Password atau Email, Salah !');
+                return redirect('login')->with('alert','Password atau Email, Salah !');
             }
         }
         else{
-            return redirect('login-deprecated')->with('alert','Password atau Email, Salah!');
+            return redirect('login')->with('alert','Password atau Email, Salah!');
         }
     }
 
@@ -76,6 +76,6 @@ class User extends Controller
         $data->email = $request->email;
         $data->password = bcrypt($request->password);
         $data->save();
-        return redirect('login-deprecated')->with('alert-success','Kamu berhasil Register');
+        return redirect('login')->with('alert-success','Kamu berhasil Register');
     }
 }

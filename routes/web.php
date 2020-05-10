@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'PagesController@index');
 Route::get('/', 'Post@view');
-Route::get('/login-deprecated', 'PagesController@loginDeprecated');
-Route::get('/signup-deprecated', 'PagesController@SignUpDeprecated');
+Route::get('/login', 'PagesController@loginDeprecated');
+Route::get('/signup', 'PagesController@SignUpDeprecated');
 Route::get('/test', 'PagesController@test');
 Route::get('/dashboard', 'User@index');
 Route::get('/dashboard', 'Post@index');
@@ -34,7 +34,3 @@ Route::get('read/{id}','User@index');
 Route::get('read/{id}','Post@read');
 Auth::routes();
 Route::resource('/store','Post');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

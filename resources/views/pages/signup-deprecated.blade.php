@@ -61,7 +61,7 @@
                 </div>
                 <div class="pull-right">
                   <h6>
-                    <a href="/login-deprecated" class="link">Log In >></a>
+                    <a href="/login" class="link">Log In >></a>
                   </h6>
                 </div>
             </form>
