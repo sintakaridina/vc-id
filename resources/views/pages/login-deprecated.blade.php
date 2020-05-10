@@ -54,7 +54,7 @@
                 </div>
                 <div class="pull-right">
                   <h6>
-                    <a href="/signup" class="link">Create Account</a>
+                    <a href="/register" class="link">Create Account</a>
                   </h6>
                 </div>
             </form>

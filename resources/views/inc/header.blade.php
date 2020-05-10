@@ -53,7 +53,7 @@
               
               <p>Sign Up</p>
             </a>-->
-            <a class="nav-link btn btn-neutral" href="/signup">
+            <a class="nav-link btn btn-neutral" href="/register">
             <p>Sign Up</p>
             </a>
           </li>

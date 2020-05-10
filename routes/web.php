@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'PagesController@index');
 Route::get('/', 'Post@view');
 Route::get('/login', 'PagesController@loginDeprecated');
-Route::get('/signup', 'PagesController@SignUpDeprecated');
+Route::get('/register', 'PagesController@SignUpDeprecated');
 Route::get('/test', 'PagesController@test');
 Route::get('/dashboard', 'User@index');
 Route::get('/dashboard', 'Post@index');

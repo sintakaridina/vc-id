@@ -60,7 +60,7 @@ class User extends Controller
     }
 
     public function register(Request $request){
-        return view('register');
+        return view('pages.signup-deprecated');
     }
 
     public function registerPost(Request $request){
