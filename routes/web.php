@@ -30,7 +30,7 @@ Route::get('/logout', 'User@logout');
 Route::get('edit/{id}','Post@edit');
 Route::post('update/{id}', 'Post@update');
 Route::get('delete/{id}','Post@delete');
-Route::get('read/{id}','User@index');
+
 Route::get('read/{id}','Post@read');
 
 Route::resource('/store','Post');

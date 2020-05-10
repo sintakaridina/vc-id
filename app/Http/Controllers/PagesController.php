@@ -45,6 +45,16 @@ class PagesController extends Controller
         $title = 'Write';
         return view('pages.write')->with('title', $title);
     }
+    public function read()
+    {
+        $title = 'Read';
+        return view('pages.write')->with('title', $title);
+    }
+    public function edit()
+    {
+        $title = 'Edit';
+        return view('pages.edit')->with('title', $title);
+    }
    
 
 }

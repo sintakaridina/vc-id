@@ -45,8 +45,8 @@
               <!-- Nav tabs -->
               <div class="card">
                 <div class="card-header">
-                    <div class="nav nav-tabs nav-tabs-neutral justify-content-center">
-                <img src="{{ $d->thumbnail }}" alt="Raised Image" class="rounded img-raised">
+                    <div class="nav justify-content-center">
+                <img src="{{ $d->thumbnail }}" alt="Raised Image" width="95%" height="80%"class="rounded img-raised">
                     </div>
                 </div>
                 <div class="card-body">
